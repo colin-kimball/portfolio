@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This is the portfolio site for User Experience Designer, Colin Kimball." />
+    <meta charset="utf-8" />
+    <title>Colin Kimball's Portfolio</title>
+
+    <!--build:css css/style.min.css -->
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- endbuild -->
+
+    <!-- Font refs -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-grid-home">
+                <a id="home" href="#home">Home</a>
+            </div>
+            <div class="navbar-grid-auto">
+            </div>
+            <button id="toggle-menu" type="button" class="hamburger-button" data-toggle="collapse"
+                data-target="#flyout-menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <div class="navbar-flyout-menu">
+                <div id="flyout-menu" class="navbar-flyout-inner collapse">
+                    <ul>
+                        <li class="navbar-grid-link-one">
+                            <a id="about" href="#" data-toggle="collapse" data-target="#flyout-menu">About</a>
+                        </li>
+                        <li class="navbar-grid-link-two">
+                            <a id="process" href="#" data-toggle="collapse" data-target="#flyout-menu">Process</a>
+                        </li>
+                        <li class="navbar-grid-link-three">
+                            <a id="projects" href="#" data-toggle="collapse" data-target="#flyout-menu">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="grid-container section-separator-large">
+        <div id="home-section" class="intro-header-section">
+            <h1 class="main-header"><span class="extra-light">colin</span>kimballz</h1>
+        </div>
+        <div class="intro-subheader-section">
+            <p class="sub-header">User Experience Designer</p>
+        </div>
+    </section>
+
+    <section class="grid-container section-separator-large">
+        <div id="about-section" class="section-header">
+            <h1 class="extra-light">About</h1>
+        </div>
+        <div class="section-content light">
+            <p>I am a User Experience Designer from Erie, Pennsylvania. With a
+                BA in Graphic Design, I bring a strong sense of visual design, coupled with a aptitude and passion for
+                front-end development.</p>
+
+            <p>As a former college football player, I bring skills of hard-work, teamwork and leadership to my work.
+                Coaching and
+                mentoring those around me has become a passion of mine. During 4+ years working at a Fortune 500
+                company, I have designed
+                simple applications that deliver strong business value. </p>
+
+            <p>Continuing to learn new skills has become habitual for me. I have developed an interest in front-end
+                engineering greatly
+                improved my technical skills which I feel is a huge component of a great user experience designer.</p>
+            <a role="button" class="button button-primary-outline section-separator"
+                href="images/colin_kimball_resume.pdf" target="_blank">View resume</a>
+        </div>
+    </section>
+
+    <div class="grid-container">
+        <div class="horizontal-separator"></div>
+    </div>
+
+    <section class="grid-container section-separator">
+        <div id="process-section" class="section-header">
+            <h1 class="extra-light">Process</h1>
+        </div>
+        <div class="section-content light">
+            <p>The process of a user experience design team is extremely important.</p>
+        </div>
+    </section>
+
+    <div class="grid-container">
+        <div class="horizontal-separator"></div>
+    </div>
+
+    <section class="grid-container section-separator">
+        <div id="projects-section" class="section-header">
+            <h1 class="extra-light">Projects</h1>
+        </div>
+        <div class="section-content project-section light">
+            <div class="project-number">01</div>
+            <div class="project-details">
+                <h2 class="section-sub-header">Pattern Library</h2>
+                <p>Our goal was to create a single code source where developers could grab
+                    ‘components’ and easily insert them into their application. We decided to
+                    provide a CSS stylesheet and JavaScript resource to reference in applications
+                    across the company.</p>
+                <a class="project-link" href="patternlibrary.html">
+                    <span>view project</span>
+                </a>
+            </div>
+        </div>
+        <div class="section-content project-section light section-separator">
+            <div class="project-number">02</div>
+            <div class="project-details">
+                <h2 class="section-sub-header">Commercial Insurance Quoting and Application System</h2>
+                <p>This project is currently the largest IT initiative at the company. The goal is building an industry
+                    leading quoting and application system for our independent agent force. My role is Lead User
+                    Experience
+                    Designer for building out a new business package product and enabling service, from quote to
+                    application
+                    including policy changes and claim service.</p>
+                <a class="project-link" href="commercial.html">
+                    <span>view project</span>
+                </a>
+            </div>
+        </div>
+        <div class="section-content project-section light section-separator">
+            <div class="project-number">03</div>
+            <h2 class="section-sub-header">VinoShares</h2>
+            <div class="project-details">
+                <p>VinoShares is a project that I've been working on outside of my normal 9-5 job. The intent of the
+                    company
+                    is to make expensive and often hard to obtain bottles of wine available by the glass. My
+                    role is that of User
+                    Experience Designer and Front-end developer. The experience of designing and then building my own
+                    designs
+                    out in HTML, CSS and JavaScript has given me a unique perspective.</p>
+                <a class="project-link" href="vinoshares.html">
+                    <span>view project</span>
+                </a>
+            </div>
+        </div>
+        <!--<div class="section-content light section-separator">
+            <h2 class="section-sub-header">Design System</h2>
+            <p>Building a design system is a challenging but also extremely important part of cultivating a strong
+                design team with clear standards and patterns. My role is creator and owner of the design system. Through research of other companies </p>
+            <a class="project-link" href="vinoshares.html">
+                <span>view project</span>
+            </a>
+        </div>-->
+    </section>
+
+    <footer class="section-separator-large">
+        <p class="section-separator">If you want to learn more about me or about a specific project, please contact me.
+        </p>
+        <p>phone: 814-490-6405</p>
+        <p>email: ckimball11@gmail.com</p>
+        <!-- <a role="button" class="button button-primary-outline" href="images/colin_kimball_resume.pdf" target="_blank">View Resume</a>  -->
+        <div class="footer-bottom section-separator">
+            <p>Colin Kimball &copy; 2019</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/collapse.js"></script>
+</body>
+
+</html>

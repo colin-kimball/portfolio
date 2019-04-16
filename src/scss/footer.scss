@@ -1,0 +1,26 @@
+@import 'variables';
+
+footer {
+    background-color: $primary-dark;
+    border-top: 5px solid $secondary;
+    color: $primary-light;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: auto;
+    > p,a {
+        grid-column: 2/2;
+        margin: 0 0 10px 0;
+    }
+    .footer-bottom {
+        grid-row: auto;
+        grid-column: 1/4;
+        background-color: $primary-extra-dark;
+        padding: 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        p {
+            opacity: .5;
+        }
+    }
+}

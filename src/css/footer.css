@@ -1,0 +1,25 @@
+/* Color Variables */
+/* Font Variables */
+/* Breakpoints */
+/* Heading Variables */
+/* Paragraph Variables */
+footer {
+  background-color: #29333a;
+  border-top: 5px solid #C09F6D;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: auto; }
+  footer > p, footer a {
+    grid-column: 2/2;
+    margin: 0 0 10px 0; }
+  footer .footer-bottom {
+    grid-row: auto;
+    grid-column: 1/4;
+    background-color: #1C2429;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+    footer .footer-bottom p {
+      opacity: .5; }

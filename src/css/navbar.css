@@ -1,0 +1,105 @@
+/* Color Variables */
+/* Font Variables */
+/* Breakpoints */
+/* Heading Variables */
+/* Paragraph Variables */
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #C09F6D; }
+  .navbar .navbar-inner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "home";
+    padding: 15px 20px; }
+    .navbar .navbar-inner .navbar-grid-home {
+      grid-area: home; }
+      .navbar .navbar-inner .navbar-grid-home a.navigation-back {
+        background-image: url(../images/arrow.svg);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 0 -1px; }
+      .navbar .navbar-inner .navbar-grid-home .navigation-back-text {
+        padding-left: 30px; }
+    .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner {
+      text-align: left; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 0;
+        border-top: 1px solid #C09F6D; }
+        .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li {
+          list-style: none; }
+          .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li:not(:first-child) {
+            margin-top: 20px; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse {
+        display: none; }
+        .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse.show {
+          display: block; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: height .35s ease; }
+    .navbar .navbar-inner .hamburger-button {
+      display: grid;
+      width: 25px;
+      grid-area: home;
+      justify-self: right;
+      padding: 0;
+      cursor: pointer;
+      border: none; }
+      .navbar .navbar-inner .hamburger-button .hamburger-bar {
+        background-color: #222;
+        height: 3px;
+        width: 100%; }
+        .navbar .navbar-inner .hamburger-button .hamburger-bar:not(:first-child) {
+          margin-top: 5px; }
+
+@media (min-width: 768px) {
+  .navbar .navbar-inner {
+    grid-template-columns: 2fr 4fr 6fr;
+    grid-template-areas: "home auto hamburger";
+    padding: 20px; }
+    .navbar .navbar-inner .hamburger-button {
+      display: none; }
+    .navbar .navbar-inner .navbar-flyout-menu {
+      position: relative;
+      background-color: none;
+      display: grid;
+      grid-column: hamburger; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul {
+        padding: 0;
+        display: grid;
+        grid-template-areas: "left center right";
+        text-align: right;
+        border-top: none;
+        margin: 0; }
+        .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li:not(:first-child) {
+          margin-top: 0; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse, .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse.show {
+        display: grid !important;
+        background-color: white;
+        margin: 0;
+        height: auto; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapsing {
+        position: relative;
+        height: 100%;
+        overflow: visible; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-one,
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-two,
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-three {
+        display: grid; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-one {
+        grid-area: left; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-two {
+        grid-area: center; }
+      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-three {
+        grid-area: right; }
+  .navbar .navbar-hamburger-links {
+    display: grid; } }

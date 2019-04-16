@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'font';
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: $primary-san-serif-font;
+    padding: 15px 20px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+.button-primary {
+    background-color: $primary-dark;
+    color: white;
+    @extend .light;
+}
+
+.button-primary-outline {
+    background-color: white;
+    color: $primary-dark;
+    border: 1px solid $primary-dark;
+    @extend .light;
+    &:hover {
+        background-color: $primary-dark;
+        color: white;
+    }
+}

@@ -1,0 +1,60 @@
+/* Color Variables */
+/* Font Variables */
+/* Breakpoints */
+/* Heading Variables */
+/* Paragraph Variables */
+.heading-serif {
+  font-family: "Montserrat", sans-serif; }
+
+.section-sub-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem; }
+
+ul {
+  font-family: "Open Sans", sans-serif; }
+
+.extra-light {
+  font-weight: 200; }
+
+.light {
+  font-weight: 300; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+/* Heading Styles */
+.main-header {
+  font-size: 2.25rem;
+  margin: 0; }
+
+.sub-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  text-align: center; }
+
+.section-header {
+  font-size: 1.25rem; }
+  .section-header h1 {
+    margin: 0; }
+
+@media (min-width: 671px) {
+  .main-header {
+    font-size: 3rem; }
+  .sub-header {
+    font-size: 1.25rem; } }
+
+@media (min-width: 768px) {
+  .main-header {
+    font-size: 4rem; }
+  .sub-header {
+    text-align: right;
+    font-size: 1.75rem; }
+  .section-header {
+    font-size: 2.25rem; } }
+
+@media (min-width: 1025px) {
+  .main-header {
+    font-size: 6.5rem; } }

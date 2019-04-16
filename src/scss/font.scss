@@ -1,0 +1,67 @@
+@import 'variables';
+
+.heading-serif {
+    font-family: $primary-san-serif-font;
+}
+.section-sub-header {
+    font-family: $primary-san-serif-font;
+    font-size: $heading-x-small;
+}
+ul {
+    font-family: $secondary-san-serif-font;
+}
+.extra-light {
+    font-weight: 200;
+}
+.light {
+    font-weight: 300;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+
+/* Heading Styles */
+.main-header {
+    font-size: $heading-normal;
+    margin: 0;  
+}
+.sub-header {
+    font-family: $primary-san-serif-font;
+    font-size: $paragraph-x-small;
+    text-align: center;
+}
+.section-header {
+    font-size: $heading-x-small;
+    h1 {
+        margin: 0;  
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .main-header {
+        font-size: $heading-large; 
+    }  
+    .sub-header {
+        font-size: $paragraph-small;
+    }
+}
+@media (min-width: $screen-md-min) {
+    .main-header {
+        font-size: $heading-x-large;
+    }
+    .sub-header {
+        text-align: right;
+        font-size: $paragraph-x-large;
+    }
+    .section-header {
+        font-size: $heading-normal;
+    }
+}
+@media (min-width: $screen-lg-min) {
+    .main-header {
+        font-size: $heading-gigantic;
+    }
+}
