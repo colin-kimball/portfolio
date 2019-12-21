@@ -11,7 +11,8 @@
   left: 0;
   background-color: white;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #C09F6D; }
+  border-bottom: 1px solid #C09F6D;
+  z-index: 1000; }
   .navbar .navbar-inner {
     display: grid;
     grid-template-columns: auto;
@@ -27,7 +28,7 @@
       .navbar .navbar-inner .navbar-grid-home .navigation-back-text {
         padding-left: 30px; }
     .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner {
-      text-align: left; }
+      text-align: right; }
       .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul {
         margin-top: 20px;
         padding-top: 20px;
@@ -75,13 +76,15 @@
       grid-column: hamburger; }
       .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul {
         padding: 0;
-        display: grid;
-        grid-template-areas: "left center right";
+        display: inline;
         text-align: right;
         border-top: none;
         margin: 0; }
-        .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li:not(:first-child) {
-          margin-top: 0; }
+        .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li {
+          display: inline;
+          margin-left: 40px; }
+          .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul li:not(:first-child) {
+            margin-top: 0; }
       .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse, .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner.collapse.show {
         display: grid !important;
         background-color: white;
@@ -91,15 +94,5 @@
         position: relative;
         height: 100%;
         overflow: visible; }
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-one,
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-two,
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-three {
-        display: grid; }
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-one {
-        grid-area: left; }
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-two {
-        grid-area: center; }
-      .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner .navbar-grid-link-three {
-        grid-area: right; }
   .navbar .navbar-hamburger-links {
     display: grid; } }

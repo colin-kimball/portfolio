@@ -8,9 +8,17 @@ footer {
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     grid-template-rows: auto;
+    h3 {
+        grid-column: 2; 
+        max-width: 480px;
+        margin: 0 auto 20px auto;
+    }
     > p,a {
         grid-column: 2/2;
         margin: 0 0 10px 0;
+        + p {
+            margin-top: 0;
+        }
     }
     .footer-bottom {
         grid-row: auto;

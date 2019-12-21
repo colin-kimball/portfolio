@@ -11,9 +11,15 @@ footer {
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   grid-template-rows: auto; }
+  footer h3 {
+    grid-column: 2;
+    max-width: 480px;
+    margin: 0 auto 20px auto; }
   footer > p, footer a {
     grid-column: 2/2;
     margin: 0 0 10px 0; }
+    footer > p + p, footer a + p {
+      margin-top: 0; }
   footer .footer-bottom {
     grid-row: auto;
     grid-column: 1/4;

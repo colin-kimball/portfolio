@@ -12,19 +12,33 @@ a {
     text-decoration: none;
     color: $primary-dark;
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 p {
     font-family: $secondary-san-serif-font;
+    margin: 0;
+    + p {
+        margin-top: 30px;
+    }
+}
+ol {
+    font-weight: 700;
+    padding-inline-start: 20px;
+    margin-top: 40px;
+    li {
+        font-size: 1.25rem;
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+        + li {
+            margin-top: 30px;
+        }
+    }
 }
 a.project-link {
-    background-image: url(../images/arrow.svg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: 0 1px;
-    color: $primary-dark;
-    display: grid;
-    text-align: right;
     text-decoration: underline;
     span {
         -webkit-transform:  rotate(-180deg);
@@ -35,15 +49,18 @@ a.project-link {
 section {
     margin-top: 40px;
 }
-.horizontal-separator {
-    width: 100%;
-    border: .5px solid $secondary;
-    margin: 40px 0;
-    grid-column: 2/10;
+.header-container {
+    height: 100vh;
+    .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 30px repeat(8, 1fr) 30px;
+    grid-template-columns: 30px repeat(3, 1fr) 30px;
     grid-template-rows: auto;
 }
 .section-dark {
@@ -61,7 +78,7 @@ section {
 .subpage-section-separator {
     margin-top: 100px;
     display: grid;
-    grid-column: 3/9;
+    grid-column: 3/5;
     text-align: right;
     h1 {
         margin: -5px 0;
@@ -70,22 +87,31 @@ section {
         color: $secondary;
     }
 }
+.main-content {
+    .summary-header {
+        margin-bottom: 10px;
+    } 
+    .case-study-header {
+        margin-top: 60px;
+    }
+}
 .project-image-container {
     display: grid;
-    grid-column: 2/10;
-    margin-top: 20px;
+    grid-column: 2/5;
+    margin-top: 60px;
     img {
         width: 100%;
+        margin-top: 10px;
     }
 }
 .intro-header-section {
     display: grid;
-    grid-column: 2/10;
+    grid-column: 2/5;
     text-align: center;
 }
 .intro-subheader-section {
     display: grid;
-    grid-column: 2/10;
+    grid-column: 2/5;
     grid-row: 2;
     margin: 0;
     p {
@@ -101,45 +127,94 @@ section {
 .section-header {
     padding: 10px 0;
     letter-spacing: 2px;
-    grid-column: 2/10;
+    grid-column: 2/5;
+    h2 {
+        font-weight: 700;
+    }
+}
+#projects-section {
+    margin-bottom: 10px;
+}
+#about-section + .section-content {
+    .button {
+        margin-top: 40px;
+        border-radius: 60px;
+        box-shadow: 1px 2px 4px rgba(0,0,0,.10);
+    }
 }
 .section-content {
-    line-height: 1.4rem;
-    grid-column: 2/10;
-    p + p {
-        margin-top: 30px;
-    }
+    grid-column: 2/5;
     &.project-section {
         display: grid;
-        grid-template-columns: 1fr 5fr;
-        .project-number {
-            grid-column: 1/3;
-            padding: 1.5rem 0;
+        grid-column: 2/5;
+        .project-details {
+            h3 {
+                margin-bottom: 20px;
+            }
+            p + p {
+                margin-top: 0;
+            }
+        }
+        & img {
+            width: 100%;
+        }
+        .project-image {
             font-size: 3rem;
             font-family: $primary-serif-font;
             color: $secondary;
+            margin-top: 20px;
         }
-        .project-details {
-            grid-column: 1/3;
+        +.project-section {
+            margin-top: 40px;
         }
-    }
+    }   
 }
 @media (min-width: $screen-md-min) {
+    #projects-section {
+        margin-bottom: 60px;
+    }
     .grid-container {
-        grid-template-columns: 40px repeat(8, 1fr) 40px;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+    }
+    .main-content {
+        max-width: 960px;
+        margin: 0 auto
     }
     .section-header, .section-content {
-        grid-column: 3/9;
+        grid-column: 2/5;
     }
     .section-content {
         &.project-section {
             display: grid;
-            grid-template-columns: 1fr 5fr;
-            .project-number {
-                grid-column: 1;
+            grid-column: 2/5;
+            grid-template-columns: 1fr 2fr;
+            grid-column-gap: 40px;
+            &:hover {
+                img {
+                    transform: scale(1.04, 1.04);
+                }
+                h3 {
+                    color: $secondary;
+                }
             }
-            .project-details {
+            .project-image {
+                margin-top: 0;
+            }
+            .image-container {
                 grid-column: 2;
+                overflow: hidden;
+                height: 100%;
+                img {
+                    height: 100%;
+                    transition: all 0.25s ease-in-out;
+                    transition-property: all;
+                    transition-duration: 0.25s;
+                    transition-timing-function: ease-in-out;
+                    transition-delay: 0s;
+                }
+            }
+            +.project-section {
+                margin-top: 80px;
             }
         }
     }
@@ -150,7 +225,7 @@ section {
         }
     }
     .horizontal-separator {
-        grid-column: 3/9;
+        grid-column: 2/5;
         margin: 80px 0;
         width: 300px;
     }
@@ -161,9 +236,9 @@ section {
         margin-top: 60px;
     }
     .intro-header-section {
-        grid-column: 4/8;
+        grid-column: 2/5;
     }
     .intro-subheader-section {
-        grid-column: 4/8;
+        grid-column: 2/5;
     }
 }
