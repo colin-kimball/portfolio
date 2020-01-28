@@ -20,6 +20,9 @@ footer {
             margin-top: 0;
         }
     }
+    p {
+        max-width: none;
+    }
     .footer-bottom {
         grid-row: auto;
         grid-column: 1/4;

@@ -11,6 +11,9 @@ body {
 a {
     text-decoration: none;
     color: $primary-dark;
+    &:hover {
+        cursor: pointer;
+    }
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -18,6 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: $secondary-san-serif-font;
     margin: 0;
+    max-width: 680px;
+    line-height: 1.75;
     + p {
         margin-top: 30px;
     }
@@ -63,6 +68,9 @@ section {
     grid-template-columns: 30px repeat(3, 1fr) 30px;
     grid-template-rows: auto;
 }
+.case-study-section {
+    margin-top: 160px;
+}
 .section-dark {
     background-color: $primary-dark;
     color: white;
@@ -88,20 +96,32 @@ section {
     }
 }
 .main-content {
+    width: 100%;
     .summary-header {
         margin-bottom: 10px;
     } 
     .case-study-header {
         margin-top: 60px;
     }
+    iframe {
+        margin-top: 3rem;
+    }
 }
 .project-image-container {
     display: grid;
     grid-column: 2/5;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
     margin-top: 60px;
+    h1, p, img {
+        grid-column: 1/4;
+    }
     img {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 30px;
+    }
+    .album-image {
+        box-shadow: 1px 2px 20px rgba(0,0,0,.10);
     }
 }
 .intro-header-section {
@@ -117,6 +137,16 @@ section {
     p {
         text-align: center;
         margin: 0;
+    }
+}
+.music-icons-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    a + a {
+        margin-left: 2rem;
+    }
+    img {
+        height: 40px;
     }
 }
 .subpage-section-heading {
@@ -144,6 +174,9 @@ section {
 }
 .section-content {
     grid-column: 2/5;
+    + .section-content {
+        margin-top: 30px;
+    }
     &.project-section {
         display: grid;
         grid-column: 2/5;
@@ -168,6 +201,17 @@ section {
             margin-top: 40px;
         }
     }   
+}
+
+.visit-website-section {
+    padding: 60px 0;
+    background-color: $primary-dark;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    .button {
+        margin-top: 20px;
+    }
 }
 @media (min-width: $screen-md-min) {
     #projects-section {

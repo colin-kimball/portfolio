@@ -25,6 +25,9 @@ ul {
 .lowercase {
   text-transform: lowercase; }
 
+.align-center {
+  text-align: center; }
+
 /* Heading Styles */
 .main-header {
   font-size: 2.25rem;

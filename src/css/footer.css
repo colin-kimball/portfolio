@@ -20,6 +20,8 @@ footer {
     margin: 0 0 10px 0; }
     footer > p + p, footer a + p {
       margin-top: 0; }
+  footer p {
+    max-width: none; }
   footer .footer-bottom {
     grid-row: auto;
     grid-column: 1/4;

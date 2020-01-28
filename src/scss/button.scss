@@ -9,9 +9,11 @@
     text-decoration: none;
     text-align: center;
     font-family: $primary-san-serif-font;
-    padding: 15px 20px;
-    letter-spacing: 2px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 60px;
 }
 .button-primary {
     background-color: $primary-dark;
@@ -27,5 +29,6 @@
     &:hover {
         background-color: $primary-dark;
         color: white;
+        border: 1px solid white;
     }
 }
