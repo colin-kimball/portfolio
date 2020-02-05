@@ -125,7 +125,7 @@ section {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 30px repeat(3, 1fr) 30px;
+  grid-template-columns: 10px repeat(3, 1fr) 10px;
   grid-template-rows: auto; }
 
 .case-study-section {
@@ -178,6 +178,20 @@ section {
     margin: 2rem 0; }
   .project-image-container .album-image {
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1); }
+
+.next-project-link {
+  margin: 120px 0;
+  text-align: center; }
+  .next-project-link a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C09F6D;
+    border: 2px solid #C09F6D;
+    padding: 10px 20px;
+    border-radius: 4px; }
+    .next-project-link a:hover {
+      color: white;
+      background-color: #C09F6D; }
 
 .image-dropshadow {
   box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1); }
@@ -251,7 +265,7 @@ section {
   color: white;
   text-align: center;
   margin-top: 80px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25); }
   .visit-website-section .button {
     margin-top: 20px; }

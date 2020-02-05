@@ -26,7 +26,8 @@
         background-repeat: no-repeat;
         background-position: 0 -1px; }
       .navbar .navbar-inner .navbar-grid-home .navigation-back-text {
-        padding-left: 30px; }
+        padding-left: 30px;
+        font-weight: 700; }
     .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner {
       text-align: right; }
       .navbar .navbar-inner .navbar-flyout-menu .navbar-flyout-inner ul {
@@ -49,6 +50,7 @@
         transition: height .35s ease; }
     .navbar .navbar-inner .hamburger-button {
       display: grid;
+      background-color: transparent;
       width: 25px;
       grid-area: home;
       justify-self: right;

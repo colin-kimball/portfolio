@@ -17,7 +17,8 @@ footer {
     margin: 0 auto 20px auto; }
   footer > p, footer a {
     grid-column: 2/2;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    color: white; }
     footer > p + p, footer a + p {
       margin-top: 0; }
   footer p {

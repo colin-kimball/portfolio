@@ -25,6 +25,7 @@
             }
             .navigation-back-text {
                 padding-left: 30px;
+                font-weight: 700;
             }
         }
         .navbar-flyout-menu {
@@ -58,6 +59,7 @@
         }
         .hamburger-button {
             display: grid;
+            background-color: transparent;
             width: 25px;
             grid-area: home; 
             justify-self: right;
