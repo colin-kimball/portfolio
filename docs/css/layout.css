@@ -191,6 +191,10 @@ section {
   .project-image-container .album-image {
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1); }
 
+.tre-image-container img {
+  width: 75%;
+  margin: 2rem auto; }
+
 .next-project-link {
   margin: 120px 0;
   text-align: center; }
@@ -322,6 +326,9 @@ section {
       margin-top: 80px; }
   .project-image-container .album-image {
     grid-column: auto; }
+  .tre-image-container img {
+    width: 50%;
+    margin: 2rem auto; }
   .subpage-section-separator {
     margin-top: 160px; }
     .subpage-section-separator h1 {
