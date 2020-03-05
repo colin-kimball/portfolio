@@ -11,7 +11,7 @@ footer {
     h3 {
         grid-column: 2; 
         max-width: 480px;
-        margin: 0 auto 20px auto;
+        margin: 2rem auto 1rem;
     }
     > p,a {
         grid-column: 2/2;
@@ -29,8 +29,7 @@ footer {
         grid-column: 1/4;
         background-color: $primary-extra-dark;
         padding: 10px 0;
-        text-transform: uppercase;
-        letter-spacing: 4px;
+        margin-top: 1rem;
         p {
             opacity: .5;
         }

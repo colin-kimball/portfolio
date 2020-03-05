@@ -149,6 +149,10 @@ section {
   padding-bottom: 60px;
   border-top: 5px solid #C09F6D; }
 
+.section-medium {
+  background-color: #29333a;
+  color: white; }
+
 .section-separator-large {
   margin-top: 160px; }
 
@@ -174,6 +178,17 @@ section {
     text-align: center; }
   .main-content iframe {
     margin-top: 3rem; }
+  .main-content .design-process-diagram {
+    grid-column: 2/5;
+    width: 65%;
+    margin: 1rem auto 0; }
+  .main-content .icon-reference {
+    font-size: .5rem;
+    grid-column: 2/5;
+    text-align: right;
+    color: #888888; }
+    .main-content .icon-reference + .icon-reference {
+      margin-bottom: 3rem; }
 
 .project-image-container {
   display: grid;
@@ -274,6 +289,15 @@ section {
       margin-top: 20px; }
     .section-content.project-section + .project-section {
       margin-top: 40px; }
+
+.quote-section {
+  padding: 8rem 0;
+  text-align: center; }
+  .quote-section h2 {
+    font-size: 3rem; }
+  .quote-section p {
+    font-size: 1.5rem;
+    margin: 1rem auto 0; }
 
 .visit-website-section {
   padding: 60px 0;
