@@ -154,18 +154,17 @@ section {
   color: white; }
 
 .section-separator-large {
-  margin-top: 160px; }
+  margin-top: 100px; }
 
 .section-separator {
   margin-top: 40px; }
 
 .subpage-section-separator {
-  margin-top: 100px;
+  margin-top: 40px;
   display: grid;
-  grid-column: 3/5;
-  text-align: right; }
+  grid-column: 2/5; }
   .subpage-section-separator h1 {
-    margin: -5px 0; }
+    margin: 0 0 20px; }
   .subpage-section-separator span {
     color: #C09F6D; }
 
@@ -180,7 +179,7 @@ section {
     margin-top: 3rem; }
   .main-content .design-process-diagram {
     grid-column: 2/5;
-    width: 65%;
+    width: 100%;
     margin: 1rem auto 0; }
   .main-content .icon-reference {
     font-size: .5rem;
@@ -250,9 +249,10 @@ section {
     height: 40px; }
 
 .subpage-section-heading {
-  background-color: #29333a;
-  color: white;
+  color: #29333a;
   padding-bottom: 60px; }
+  .subpage-section-heading img {
+    width: 100%; }
 
 .section-header {
   padding: 10px 0;
@@ -291,12 +291,12 @@ section {
       margin-top: 40px; }
 
 .quote-section {
-  padding: 8rem 0;
+  padding: 3rem 0;
   text-align: center; }
   .quote-section h2 {
-    font-size: 3rem; }
+    font-size: 1rem; }
   .quote-section p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem auto 0; }
 
 .visit-website-section {
@@ -322,6 +322,10 @@ section {
   .main-content {
     max-width: 960px;
     margin: 0 auto; }
+    .main-content .design-process-diagram {
+      grid-column: 2/5;
+      width: 65%;
+      margin: 1rem auto 0; }
   .section-header, .section-content {
     grid-column: 2/5; }
   .section-content.project-section {
@@ -350,13 +354,18 @@ section {
       margin-top: 80px; }
   .project-image-container .album-image {
     grid-column: auto; }
+  .quote-section {
+    padding: 8rem 0;
+    text-align: center; }
+    .quote-section h2 {
+      font-size: 3rem; }
   .tre-image-container img {
     width: 50%;
     margin: 2rem auto; }
   .subpage-section-separator {
-    margin-top: 160px; }
+    margin-top: 80px; }
     .subpage-section-separator h1 {
-      margin: -10px 0; }
+      margin: 0 0 40px; }
   .horizontal-separator {
     grid-column: 2/5;
     margin: 80px 0;

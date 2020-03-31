@@ -95,18 +95,17 @@ section {
     color: white;
 }
 .section-separator-large {
-    margin-top: 160px;
+    margin-top: 100px;
 }
 .section-separator {
     margin-top: 40px;
 }
 .subpage-section-separator {
-    margin-top: 100px;
+    margin-top: 40px;
     display: grid;
-    grid-column: 3/5;
-    text-align: right;
+    grid-column: 2/5;
     h1 {
-        margin: -5px 0;
+        margin: 0 0 20px;
     }
     span {
         color: $secondary;
@@ -126,7 +125,7 @@ section {
     }
     .design-process-diagram {
         grid-column: 2/5;
-        width: 65%;
+        width: 100%;
         margin: 1rem auto 0;
     }
     .icon-reference {
@@ -208,9 +207,11 @@ section {
     }
 }
 .subpage-section-heading {
-    background-color: $primary-dark;
-    color: white;
+    color: $primary-dark;
     padding-bottom: 60px;
+    img {
+        width: 100%;
+    }
 }
 .section-header {
     padding: 10px 0;
@@ -261,13 +262,13 @@ section {
     }   
 }
 .quote-section {
-    padding: 8rem 0;    
+    padding: 3rem 0;    
     text-align: center;
     h2 {
-        font-size: 3rem;
+        font-size: 1rem;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 1rem auto 0;
     }
 }
@@ -297,7 +298,12 @@ section {
     }
     .main-content {
         max-width: 960px;
-        margin: 0 auto
+        margin: 0 auto;
+        .design-process-diagram {
+            grid-column: 2/5;
+            width: 65%;
+            margin: 1rem auto 0;
+        }
     }
     .section-header, .section-content {
         grid-column: 2/5;
@@ -340,14 +346,21 @@ section {
     .project-image-container .album-image {
         grid-column: auto;
     }
+    .quote-section {
+        padding: 8rem 0;    
+        text-align: center;
+        h2 {
+            font-size: 3rem;
+        }
+    }
     .tre-image-container img {
         width: 50%;
         margin: 2rem auto;
     }
     .subpage-section-separator {
-        margin-top: 160px;
+        margin-top: 80px;
         h1 {
-            margin: -10px 0;
+            margin: 0 0 40px;
         }
     }
     .horizontal-separator {
