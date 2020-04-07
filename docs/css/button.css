@@ -13,7 +13,8 @@
 
 .section-sub-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.25rem;
+  margin-bottom: .5rem; }
 
 ul {
   font-family: "Open Sans", sans-serif; }
@@ -38,7 +39,7 @@ ul {
   font-size: 2.25rem;
   margin: 0; }
 
-.sub-header {
+.intro-sub-header {
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   text-align: center; }
@@ -51,13 +52,16 @@ ul {
 @media (min-width: 671px) {
   .main-header {
     font-size: 3rem; }
-  .sub-header {
-    font-size: 1.25rem; } }
+  .intro-sub-header {
+    font-size: 1.25rem; }
+  .section-sub-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; } }
 
 @media (min-width: 768px) {
   .main-header {
     font-size: 4rem; }
-  .sub-header {
+  .intro-sub-header {
     text-align: right;
     font-size: 1.75rem; }
   .section-header {

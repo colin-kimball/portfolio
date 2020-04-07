@@ -3,6 +3,11 @@
 /* Breakpoints */
 /* Heading Variables */
 /* Paragraph Variables */
+/* Color Variables */
+/* Font Variables */
+/* Breakpoints */
+/* Heading Variables */
+/* Paragraph Variables */
 .heading-serif {
   font-family: "Montserrat", sans-serif; }
 
@@ -65,3 +70,12 @@ ul {
 @media (min-width: 1025px) {
   .main-header {
     font-size: 6.5rem; } }
+
+.pill {
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  width: fit-content;
+  padding: 2px 8px;
+  color: #444; }
+  .pill + .pill {
+    margin-top: .5rem !important; }

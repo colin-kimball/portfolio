@@ -5,7 +5,8 @@
 }
 .section-sub-header {
     font-family: $primary-san-serif-font;
-    font-size: $heading-small;
+    font-size: $heading-x-small;
+    margin-bottom: .5rem;
 }
 ul {
     font-family: $secondary-san-serif-font;
@@ -31,7 +32,7 @@ ul {
     font-size: $heading-normal;
     margin: 0;  
 }
-.sub-header {
+.intro-sub-header {
     font-family: $primary-san-serif-font;
     font-size: $paragraph-x-small;
     text-align: center;
@@ -40,22 +41,26 @@ ul {
     font-size: $heading-x-small;
     h1 {
         margin: 0;  
-    }
+    }   
 }
 
 @media (min-width: $screen-sm-min) {
     .main-header {
         font-size: $heading-large; 
     }  
-    .sub-header {
+    .intro-sub-header {
         font-size: $paragraph-small;
+    }
+    .section-sub-header {
+        font-size: $heading-small;
+        margin-bottom: 1rem;
     }
 }
 @media (min-width: $screen-md-min) {
     .main-header {
         font-size: $heading-x-large;
     }
-    .sub-header {
+    .intro-sub-header {
         text-align: right;
         font-size: $paragraph-x-large;
     }

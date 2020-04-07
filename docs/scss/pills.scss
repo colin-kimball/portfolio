@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'font';
+
+.pill {
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    width: fit-content;
+    padding: 2px 8px;
+    color: #444;
+    +.pill {
+        margin-top: .5rem !important;
+    }
+}
