@@ -35,7 +35,7 @@ ol {
         font-size: 1.25rem;
         p {
             font-size: 1rem;
-            font-weight: 300;
+            font-weight: 400;
             margin-top: 10px;
         }
         + li {
@@ -82,18 +82,26 @@ section {
     }
 }
 .case-study-section {
-    margin-top: 160px;
+    padding: 80px 0;
+    h3 {
+        text-align: center;
+    }
+    span {
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        margin: 2rem 0 -2rem;
+    }
+}
+.section-medium {
+    background-color: #f8f8f8;
+    color: $primary-dark;
 }
 .section-dark {
     background-color: $primary-dark;
-    color: white;
-    padding-bottom: 60px;
-    border-top: 5px solid $secondary;
-}
-.section-medium {
-    background-color: #29333a;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23485d6b' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     color: white;
+    margin: 80px 0;
 }
 .section-separator-large {
     margin-top: 100px;
@@ -116,10 +124,6 @@ section {
     width: 100%;
     .summary-header {
         margin-bottom: 10px;
-    } 
-    .case-study-header {
-        margin-top: 60px;
-        text-align: center;
     }
     iframe {
         margin-top: 3rem;
@@ -164,7 +168,7 @@ section {
     margin: 2rem auto;
 }
 .next-project-link {
-    margin: 120px 0;
+    margin: 120px 0 30px 0;
     text-align: center;
     a {
         font-size: 1.5rem;
@@ -176,6 +180,27 @@ section {
         &:hover {
             color: white;
             background-color: $secondary;
+        }
+        span {
+            font-size: 42px;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+    }
+}
+.previous-project-link {
+    text-align: center;
+    a {
+        font-size: 1.25rem;
+        color: $secondary;
+        &:hover {
+            opacity: .75;
+        }
+        span {
+            font-size: 36px;
+            vertical-align: middle;
+            margin-top: -3px;
+            transform: rotate(180deg);
         }
     }
 }
@@ -234,6 +259,9 @@ section {
 }
 .section-content {
     grid-column: 2/5;
+    h1 + p {
+        margin-top: .75rem;
+    }
     + .section-content {
         margin-top: 30px;
     }
@@ -274,12 +302,13 @@ section {
     }
 }
 .visit-website-section {
-    padding: 60px 0;
+    padding: 60px 20px 60px 60px;
     background-color: $primary-dark;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23485d6b' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     color: white;
-    text-align: center;
+    //text-align: center;
     margin-top: 80px;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 1px 2px 8px rgba(0,0,0, .25);
     .button {
         margin-top: 20px;
@@ -353,6 +382,12 @@ section {
         h2 {
             font-size: 3rem;
         }
+    }
+    .section-dark {
+        margin: 160px 0;
+    }
+    .case-study-section {
+        max-width: 500px;
     }
     .tre-image-container img {
         width: 50%;
