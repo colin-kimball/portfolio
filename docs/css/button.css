@@ -22,7 +22,7 @@ ul {
 .extra-light {
   font-weight: 200; }
 
-.light, .button-primary, .button-primary-outline {
+.light {
   font-weight: 300; }
 
 .uppercase {
@@ -80,10 +80,9 @@ ul {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
-  letter-spacing: 1px;
   transition: all 0.3s ease;
   cursor: pointer;
-  border-radius: 60px; }
+  border-radius: 4px; }
 
 .button-primary {
   background-color: #29333a;
@@ -92,7 +91,8 @@ ul {
 .button-primary-outline {
   background-color: white;
   color: #29333a;
-  border: 1px solid #29333a; }
+  border: 1px solid #29333a;
+  font-weight: 700; }
   .button-primary-outline:hover {
     background-color: #29333a;
     color: white;

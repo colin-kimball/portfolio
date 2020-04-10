@@ -132,6 +132,15 @@ section {
   grid-template-columns: 20px repeat(3, 1fr) 20px;
   grid-template-rows: auto; }
 
+.grid-container-thirds {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem; }
+  .grid-container-thirds img {
+    width: 100%;
+    box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.25); }
+
 .grid-container-quarters {
   display: grid;
   grid-column: 2/5;
@@ -290,9 +299,7 @@ section {
   margin-bottom: 10px; }
 
 #about-section + .section-content .button {
-  margin-top: 40px;
-  border-radius: 60px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); }
+  margin-top: 40px; }
 
 .section-content {
   grid-column: 2/5; }
@@ -313,7 +320,8 @@ section {
       font-size: 3rem;
       font-family: "Lora", serif;
       color: #C09F6D;
-      margin-top: 20px; }
+      margin-top: 20px;
+      border-radius: 4px; }
     .section-content.project-section + .project-section {
       margin-top: 40px; }
 
@@ -346,6 +354,9 @@ section {
     margin-bottom: 60px; }
   .grid-container {
     grid-template-columns: 40px repeat(3, 1fr) 40px; }
+  .grid-container-thirds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
   .main-content {
     max-width: 960px;
     margin: 0 auto; }
@@ -361,7 +372,8 @@ section {
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 40px; }
     .section-content.project-section:hover img {
-      transform: scale(1.04, 1.04); }
+      transform: scale(1.04, 1.04);
+      border-radius: 4px; }
     .section-content.project-section:hover h3 {
       color: #C09F6D; }
     .section-content.project-section .project-image {
@@ -369,7 +381,8 @@ section {
     .section-content.project-section .image-container {
       grid-column: 2;
       overflow: hidden;
-      height: 100%; }
+      height: 100%;
+      border-radius: 4px; }
       .section-content.project-section .image-container img {
         height: 100%;
         transition: all 0.25s ease-in-out;
