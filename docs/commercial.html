@@ -22,6 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        ul {
+            grid-column: 1/4;
+        }
+    </style>
 </head>
 
 <body>
@@ -112,6 +117,90 @@
                 shown at the top of the tab list for middle market policies that have a lot of locations and buildings.
             </p>
             <img src="images/commercial_location.png" alt="Commercial Insurance Application Locations Page">
+        </div>
+    </section>
+
+    <section class="grid-container section-dark">
+        <div class="section-content main-content case-study-section">
+            <h3>Below is a description of the underwriting referral workflow in the application:</h3>
+            <span class="material-icons">
+                expand_more
+            </span>
+        </div>
+    </section>
+
+    <section class="grid-container section-separator">
+        <div class="project-image-container">
+            <h1>Underwriting referral workflow</h1>
+            <p>One of the most complex workflows we needed to address was letting our Agents know if their quote or
+                application needed to be referred to an Underwriter. The old process for referrals was to display a
+                generic message to our Agents on every page of the application letting them know that some referrals
+                existed, but not telling them what the referrals were for.
+            </p>
+            <img class="image-dropshadow" src="images/generic_uw_message.jpg"
+                alt="Commercial Insurance Application - Generic Underwriting Message">
+            <p>Through user-research conducted with our Agents, we found that this was a huge pain point for them, and
+                something that other insurance companies were handling much better. Agents wanted clarity on what was
+                causing their application to be referred to an Underwriter. The process caused both confusion and a
+                delay in processing applications due to the need for action to be taken by an Underwriter.</p>
+        </div>
+    </section>
+
+    <section class="grid-container section-separator">
+        <div class="project-image-container">
+            <h1>Challenges</h1>
+            <ul>
+                <li>Performance could be impacted by number of calls to referral service</li>
+                <li>Business had concerns with Agents submitting high-risk business without approval </li>
+                <li>Business didn't want to stop Agents from being able to submit applications</li>
+            </ul>
+            <h1>Solution</h1>
+            <ul>
+                <li>Display referrals at 2 critical points in the workflow: At quote and submission</li>
+                <li>Provide ability to see referrals at any time once user has completed the quote process</li>
+                <li>Force Agents to enter which underwriter they talked to about approving risk before
+                    submission </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="grid-container section-separator">
+        <div class="project-image-container">
+            <h1>Underwriting referrals at Quote</h1>
+            <p>When the user navigates to the Coverages page for the first time, they are able to see their quote
+                premium. If any underwriting referrals have been triggered up to this point, we display them here to let
+                Agents know that the referrals may affect risk acceptability and pricing. This allows the Agent to be
+                aware
+                of potential concerns with the risk and creates transparency with the Customer about the premium amount.
+            </p>
+            <img class="image-dropshadow" src="images/uw_modal_quote.jpg"
+                alt="Commercial Insurance Application - Underwriting Referrals at Quote">
+        </div>
+    </section>
+
+    <section class="grid-container section-separator">
+        <div class="project-image-container">
+            <h1>Underwriting referrals popover</h1>
+            <p>When the user clicks 'Continue to see premium' they will land on the Coverages page and see their quote
+                premium. At this point, the user can now access Underwriting referrals from the header (which we
+                indicate to them using a helpful popover). Providing referrals via this link in the header allowed us to
+                mitigate performance concerns by only calling the referrals service when the user clicks this link.</p>
+            <img class="image-dropshadow" src="images/referrals_popover.jpg"
+                alt="Commercial Insurance Application - Underwriting Referrals at Quote">
+        </div>
+    </section>
+
+    <section class="grid-container section-separator">
+        <div class="project-image-container">
+            <h1>Underwriting referrals at submission</h1>
+            <p>We show refferals at the end of the workflow when the Agent completes the application and is ready to
+                submit the policy. This is the most critical point in the workflow. Additional referrals could've been
+                triggered during the application process, so those will be displayed to Agents, along with an area to
+                enter the Underwriter that they spoke with and when. This last step puts the onus on the Agent to be
+                sure he/she is writing good business. This data is stored and can be referenced by home office employees
+                if a policy is written outside of our risk appetite.</p>
+            <img class="image-dropshadow" src="images/uw_referrals_submission.jpg"
+                alt="Commercial Insurance Application - Underwriting Referrals at Quote">
         </div>
     </section>
 
