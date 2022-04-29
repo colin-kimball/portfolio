@@ -9,7 +9,7 @@
     "serve": "gulp serve"
   },
   "dependencies": {
-    "async": "^2.1.5",
+    "async": "^2.6.4",
     "del": "~2.2.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "~2.3.0",
